@@ -1,0 +1,3 @@
+- [ ] Comment out PHP code at the top of index.php
+- [ ] Comment out existing forms and h1 tags in the body
+- [ ] Add a simple login form with username/email and password fields
