@@ -178,7 +178,7 @@ include "connection1.php";
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change Password</a>
 
 
-                        <form method="POST" action="logout2.php"
+                        <form method="POST" action="logout.php"
                             onclick="return confirm('Are you sure you want to log-out?')">
 
 
@@ -231,11 +231,11 @@ include "connection1.php";
 
                             <div class="flex justify-between mb-4">
                                 <h2 class="text-lg font-semibold">Add Pinya Product</h2>
-                                <button onclick="closeModal()">&times;</button>
+                                <button onclick="closeModal('userModal')">&times;</button>
                             </div>
 
 
-                            <form method="POST" action="add_product.php">
+                            <form method="POST" action="create_product.php">
 
 
                                 <div class="mb-2">
@@ -363,7 +363,7 @@ include "connection1.php";
                                 </div>
 
 
-                                <form method="POST" action="edit_product.php">
+                                <form method="POST" action="edit_products.php">
 
 
                                     <input type="hidden" name="id" id="edit_id">

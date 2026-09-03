@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if(mysqli_num_rows($checkUsername) > 0) {
         echo "<script>alert('Username already exists!');</script>";
-        echo "<script>window.location.href='../index.php';</script>";
+        echo "<script>window.location.href='index.php';</script>";
     } else {
 
         $sql = "INSERT INTO users(username, password, user_type) 
@@ -19,10 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                           
         if(mysqli_query($connection, $sql)) {
             echo "<script>alert('User added successfully!');</script>";
-            echo "<script>window.location.href='../index.php';</script>";//point to login form
+            echo "<script>window.location.href='index.php';</script>";
         } else {
             echo "<script>alert('Error adding user!');</script>";
-            echo "<script>window.location.href='../index.php';</script>";//point to login form
+            echo "<script>window.location.href='index.php';</script>";
         }
     }
 }
